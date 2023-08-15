@@ -1,0 +1,22 @@
+<div class="grid bg-gray-900">
+  <div class="col-12 topo">
+    <h1 class="text text-center uppercase font-bold text-white">Biblioteca virtual</h1>
+  </div>
+  <div class="content flex w-full justify-content-center align-items-center">
+    <p-card>
+      <div class="flex flex-column gap-4">
+        <div>
+          <label for="">E-mail</label>
+          <input [(ngModel)]="requestLogin.email" type="text" pInputText/>          
+        </div>
+        <div>
+          <label for=""><i class="pi pi-key"></i> Senha</label>
+          <input  [(ngModel)]="requestLogin.password" type="password" pInputText />          
+        </div>
+        <div>
+          <button class="uppercase font-bold" (click)="login()" pButton label="Entrar"></button>
+        </div>
+      </div>
+    </p-card>
+  </div>
+</div>
