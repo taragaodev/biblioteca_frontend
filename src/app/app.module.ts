@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './resources/views/login/login.component';
+import { LoginComponent } from './views/login/login.component';
 
 // PRIMENG
 import { CardModule } from 'primeng/card'

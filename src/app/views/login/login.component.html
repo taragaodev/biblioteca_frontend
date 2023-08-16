@@ -1,0 +1,22 @@
+<div class="p-grid p-justify-center">
+  <div class="p-col-10 p-sm-6 p-md-4">
+    <p-card>
+      <div class="p-grid content">
+        <div class="p-col-12 text-center text-white uppercase text-2xl">
+          <h2>Login</h2>
+        </div>
+        <div class="p-col-12 flex align-items-center gap-3">
+          <label class="text-white uppercase" for="">Usuário</label>
+          <input type="text" [(ngModel)]="requestLogin.email" pInputText>
+        </div>
+        <div class="p-col-12 flex align-items-center gap-3">
+          <label class="text-white uppercase" for="">Senha</label>
+          <input type="password" [(ngModel)]="requestLogin.password" pInputText>
+        </div>
+        <div class="p-col-12 w-full flex justify-content-end">
+          <button (click)="login()" class="w-6" pButton label="Entrar"></button>
+        </div>
+      </div>
+    </p-card>
+  </div>
+</div>
