@@ -24,8 +24,7 @@ body{
   position: fixed;
   top: 30%;  
   left: 50%;
-  transform: translateX(-50%);
-  border: 5px solid #a34200;
+  transform: translateX(-50%);  
   margin: 0 auto;  
   border-radius: 14px;  
   width: 23rem;
@@ -33,7 +32,7 @@ body{
   display: flex;     
   align-items: center;  
   justify-content: center;
-  background-color: #95063a;
+  background-color: #ea6b19;
 }
 .p-card-content{
   padding: 8px !important;    
@@ -57,9 +56,12 @@ input{
   width: 200px;
   border-radius: 14px !important;
 }
-button{
-  background-color: #a34200 !important;
+.btn-login{  
+  background-color: #ea6b19 !important;
+  border: 1px solid #fff;
 }
-button:hover{
-  background-color: #a3410088 !important;
+.btn-login:hover{
+  background-color: #fff !important;
+  color: #ea6b19 !important;
+  border: 1px solid #ea6b19;  
 }

@@ -1,0 +1,8 @@
+Quais rotas serão publicas?
+  . rota de login
+  . rota de visualização dos livros cadastrados
+  . rota de pesquisa de livros por autores
+Quais rotas serão pricadas?
+  . rota de inserção de novos livros
+  . rota de inserção de novos autores
+  . rota de inserção de um livro nos favoritos

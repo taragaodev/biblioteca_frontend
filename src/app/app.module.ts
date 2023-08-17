@@ -11,6 +11,7 @@ import { LoginComponent } from './views/login/login.component';
 import { CardModule } from 'primeng/card'
 import { InputTextModule } from 'primeng/inputtext'
 import { ButtonModule } from 'primeng/button'
+import { AuthGuardService } from './resources/services/auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ButtonModule } from 'primeng/button'
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

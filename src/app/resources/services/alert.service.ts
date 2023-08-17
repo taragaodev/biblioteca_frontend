@@ -24,20 +24,21 @@ export class AlertService {
     return true;
   }
 
-  private showAlert(title?: string, message?: string, icon?: SweetAlertIcon): boolean {    
-    // Swal.fire(title, message, icon)    
-  
-    Swal.fire({
+  private showAlert(title?: string, message?: string, icon?: SweetAlertIcon): boolean {          
+    Swal.fire({            
       title,
-      text: message,
-      template: '#meu',
-      color: '#b10822',
+      text: message,            
+      color: '#a34200',
       icon,
-      iconColor: '#b10822',      
+      iconColor: '#a34200',      
       background: '#f3f9ff',
-      confirmButtonColor: '#b10822',  
-      confirmButtonText: 'BLZ',      
-      focusConfirm: false,
+      confirmButtonColor: '#a34200',  
+      confirmButtonText: 'Ok',      
+      allowOutsideClick: true,  
+      width: '350px',
+      heightAuto: true, 
+      timer: 5000,
+      timerProgressBar: true     
     })
 
     return true;
