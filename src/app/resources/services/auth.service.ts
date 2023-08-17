@@ -1,23 +1,23 @@
 import { Injectable } from '@angular/core';
-import { ResponseLogin } from '../models/ResposeLogin';
+import { UserToken } from '../models/UserToken';
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  public loginResponse: ResponseLogin | undefined;
   
 
+  public loginResponse: UserToken
+
   public clear():void {
-    this.loginResponse = undefined
+    this.loginResponse.token = ''
   }
 
-  public isAuthenticated(): boolean {    
-    // return Boolean(this.loginResponse?.jwt)    
-    if(this.loginResponse){
-      console.log(this.loginResponse)
-      return true
-    }
-    return false
+  public isAuthenticated(): boolean {       
+    return Boolean(!this.loginResponse?.token)                
   }
+
 }

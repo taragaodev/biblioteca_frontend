@@ -18,12 +18,6 @@ const routes: Routes = [
   {
     path: '**', redirectTo: ''
   }
-  // {
-  //   path: 'home', canActivateChild: [AuthGuardService], 
-  //   loadChildren: () => import('./views/home/home.module').then(
-  //     (m) => m.HomeModule
-  //   )
-  // }
 ];
 
 @NgModule({

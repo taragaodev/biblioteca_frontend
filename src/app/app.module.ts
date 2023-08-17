@@ -16,7 +16,7 @@ import { AuthGuardService } from './resources/services/auth-guard.service';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,    
   ],
   imports: [
     BrowserModule,
